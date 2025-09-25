@@ -58,8 +58,8 @@ Rect >> b: aNumber [
 { #category : 'initialization' }
 Rect >> initialize [
 
-	a := 1.
-	b := 2
+	self a: 1.
+	self b: 2
 ]
 
 { #category : 'calculating' }
