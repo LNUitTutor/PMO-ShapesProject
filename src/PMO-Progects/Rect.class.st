@@ -5,7 +5,7 @@ A rectangle shape
 "
 Class {
 	#name : 'Rect',
-	#superclass : 'Object',
+	#superclass : 'FlatShape',
 	#instVars : [
 		'a',
 		'b'
