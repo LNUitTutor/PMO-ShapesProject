@@ -8,6 +8,14 @@ Class {
 	#package : 'PMO-Progects'
 }
 
+{ #category : 'instance creation' }
+PmoRectPiramid class >> newWithA: width andB: length andH: height [
+
+	^ self basicNew
+		  base: (PmoRectangle newWithA: width andB: length);
+		  height: height
+]
+
 { #category : 'initialization' }
 PmoRectPiramid >> initialize [
 

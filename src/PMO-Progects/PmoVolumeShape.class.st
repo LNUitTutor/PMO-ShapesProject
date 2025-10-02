@@ -51,7 +51,7 @@ PmoVolumeShape >> initialize [
 PmoVolumeShape >> printOn: aStream [
 
 aStream
-		nextPutAll: self className;
+		nextPutAll: (self className allButFirst: 3);
 		nextPut: ${;
 		nextPutAll: 'base: ';
 		print: self base;
