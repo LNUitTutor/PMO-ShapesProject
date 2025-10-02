@@ -4,8 +4,8 @@ Just learning
 A rectangle shape
 "
 Class {
-	#name : 'Rect',
-	#superclass : 'FlatShape',
+	#name : 'PmoRectangle',
+	#superclass : 'PmoFlatShape',
 	#instVars : [
 		'a',
 		'b'
@@ -15,7 +15,7 @@ Class {
 }
 
 { #category : 'instance creation' }
-Rect class >> newWithA: width andB: high [
+PmoRectangle class >> newWithA: width andB: high [
 
 	| obj |
 	obj := self basicNew.
@@ -26,51 +26,51 @@ Rect class >> newWithA: width andB: high [
 ]
 
 { #category : 'accessing' }
-Rect >> a [
+PmoRectangle >> a [
 
 	^ a
 ]
 
 { #category : 'accessing' }
-Rect >> a: aNumber [ 
+PmoRectangle >> a: aNumber [ 
 	a := aNumber  max: 0.1
 ]
 
 { #category : 'calculating' }
-Rect >> area [
+PmoRectangle >> area [
 	"Обчислює площу прямокутника"
 
 	^ self a * self b
 ]
 
 { #category : 'accessing' }
-Rect >> b [
+PmoRectangle >> b [
 
 	^ b
 ]
 
 { #category : 'accessing' }
-Rect >> b: aNumber [
+PmoRectangle >> b: aNumber [
 
 	b := aNumber max: 0.1
 ]
 
 { #category : 'initialization' }
-Rect >> initialize [
+PmoRectangle >> initialize [
 
 	self a: 1.
 	self b: 2
 ]
 
 { #category : 'calculating' }
-Rect >> perimeter [
+PmoRectangle >> perimeter [
 	"Обчислює периметр прямокутника"
 
 	^ (a + b) * 2
 ]
 
 { #category : 'printing' }
-Rect >> printOn: aStream [
+PmoRectangle >> printOn: aStream [
 
 	aStream nextPutAll: 'a Rectangle('.
 	self a printOn: aStream.

@@ -1,6 +1,6 @@
 Class {
-	#name : 'Circle',
-	#superclass : 'FlatShape',
+	#name : 'PmoCircle',
+	#superclass : 'PmoFlatShape',
 	#instVars : [
 		'r'
 	],
@@ -9,13 +9,13 @@ Class {
 }
 
 { #category : 'calculating' }
-Circle >> area [
+PmoCircle >> area [
 
 	^ Float pi * r squared 
 ]
 
 { #category : 'calculating' }
-Circle >> perimeter [
+PmoCircle >> perimeter [
 
 	^ Float pi * 2.0 * r
 ]

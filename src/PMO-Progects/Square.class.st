@@ -1,6 +1,6 @@
 Class {
 	#name : 'Square',
-	#superclass : 'Rect',
+	#superclass : 'PmoRectangle',
 	#category : 'PMO-Progects',
 	#package : 'PMO-Progects'
 }

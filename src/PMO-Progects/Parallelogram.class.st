@@ -1,6 +1,6 @@
 Class {
 	#name : 'Parallelogram',
-	#superclass : 'Rect',
+	#superclass : 'PmoRectangle',
 	#instVars : [
 		'angle'
 	],

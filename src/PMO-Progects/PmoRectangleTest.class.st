@@ -1,24 +1,24 @@
 Class {
-	#name : 'RectanTest',
+	#name : 'PmoRectangleTest',
 	#superclass : 'TestCase',
 	#category : 'PMO-Progects',
 	#package : 'PMO-Progects'
 }
 
 { #category : 'tests' }
-RectanTest >> testCreation [
+PmoRectangleTest >> testCreation [
 
 	| r |
-	r := Rect newWithA: 5 andB: 4.
+	r := PmoRectangle newWithA: 5 andB: 4.
 	self assert: r a equals: 5.
 	self assert: r b equals: 4
 ]
 
 { #category : 'tests' }
-RectanTest >> testInitialize [
+PmoRectangleTest >> testInitialize [
 
 | r |
-r := Rect new.
+r := PmoRectangle new.
 self assert: r a equals: 1.
 self assert: r b equals: 2
 ]

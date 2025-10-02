@@ -1,18 +1,18 @@
 Class {
-	#name : 'FlatShape',
+	#name : 'PmoFlatShape',
 	#superclass : 'Object',
 	#category : 'PMO-Progects',
 	#package : 'PMO-Progects'
 }
 
 { #category : 'calculating' }
-FlatShape >> area [
+PmoFlatShape >> area [
 
 	^ self subclassResponsibility
 ]
 
 { #category : 'calculating' }
-FlatShape >> perimeter [
+PmoFlatShape >> perimeter [
 
 	^ self subclassResponsibility
 ]
