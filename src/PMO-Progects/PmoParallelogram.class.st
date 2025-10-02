@@ -1,5 +1,5 @@
 Class {
-	#name : 'Parallelogram',
+	#name : 'PmoParallelogram',
 	#superclass : 'PmoRectangle',
 	#instVars : [
 		'angle'
@@ -9,44 +9,44 @@ Class {
 }
 
 { #category : 'instance creation' }
-Parallelogram class >> newWithA: width andB: high [
+PmoParallelogram class >> newWithA: width andB: high [
 
 	^ (super newWithA: width andB: high) angle: 60
 ]
 
 { #category : 'instance creation' }
-Parallelogram class >> newWithA: width andB: high andAngle: aNumber [
+PmoParallelogram class >> newWithA: width andB: high andAngle: aNumber [
 
 	^ (super newWithA: width andB: high) angle: aNumber
 ]
 
 { #category : 'accessing' }
-Parallelogram >> angle [
+PmoParallelogram >> angle [
 
 	^ angle
 ]
 
 { #category : 'accessing' }
-Parallelogram >> angle: aNumber [
+PmoParallelogram >> angle: aNumber [
 
 	angle := (aNumber max: 1) min: 179
 ]
 
 { #category : 'initialization' }
-Parallelogram >> area [
+PmoParallelogram >> area [
 
 	^ super area * (angle / 180 * Float pi) sin
 ]
 
 { #category : 'initialization' }
-Parallelogram >> initialize [
+PmoParallelogram >> initialize [
 
 	super initialize.
 	angle := 60
 ]
 
 { #category : 'printing' }
-Parallelogram >> printOn: aStream [
+PmoParallelogram >> printOn: aStream [
 
 	aStream nextPutAll: 'a Parallelogram('.
 	self a printOn: aStream.

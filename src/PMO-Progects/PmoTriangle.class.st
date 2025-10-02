@@ -10,6 +10,15 @@ Class {
 	#package : 'PMO-Progects'
 }
 
+{ #category : 'instance creation' }
+PmoTriangle class >> newWithA: side_1 andB: side_2 byAngle: gamma [
+
+	^ self basicNew
+		  a: side_1;
+		  b: side_2;
+		  angle: gamma
+]
+
 { #category : 'accessing' }
 PmoTriangle >> a [
 
@@ -56,6 +65,14 @@ PmoTriangle >> b: aNumber [
 PmoTriangle >> c [
 
 	^ (a squared + b squared - (2 * a * b * angle degreesToRadians cos)) sqrt
+]
+
+{ #category : 'initialization' }
+PmoTriangle >> initialize [
+
+	a := 3.
+	b := 4.
+	angle := 90
 ]
 
 { #category : 'calculating' }

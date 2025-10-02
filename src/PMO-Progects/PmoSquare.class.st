@@ -1,12 +1,12 @@
 Class {
-	#name : 'Square',
+	#name : 'PmoSquare',
 	#superclass : 'PmoRectangle',
 	#category : 'PMO-Progects',
 	#package : 'PMO-Progects'
 }
 
 { #category : 'instance creation' }
-Square class >> newWithA: aSide [
+PmoSquare class >> newWithA: aSide [
 
 	| obj |
 	obj := self basicNew.
@@ -15,20 +15,20 @@ Square class >> newWithA: aSide [
 ]
 
 { #category : 'accessing' }
-Square >> a: aNumber [
+PmoSquare >> a: aNumber [
 
 	a := aNumber.
 	b := aNumber
 ]
 
 { #category : 'accessing' }
-Square >> b: aNumber [
+PmoSquare >> b: aNumber [
 
 	^ self
 ]
 
 { #category : 'printing' }
-Square >> printOn: aStream [
+PmoSquare >> printOn: aStream [
 
 	aStream nextPutAll: 'a Square('.
 	self a printOn: aStream.
