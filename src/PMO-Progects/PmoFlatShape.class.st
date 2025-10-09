@@ -5,6 +5,12 @@ Class {
 	#package : 'PMO-Progects'
 }
 
+{ #category : 'constants' }
+PmoFlatShape class >> minimalSize [
+
+	^ 0.1
+]
+
 { #category : 'calculating' }
 PmoFlatShape >> area [
 

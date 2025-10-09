@@ -5,6 +5,12 @@ Class {
 	#package : 'PMO-Progects'
 }
 
+{ #category : 'constants' }
+PmoSquare class >> minimalSize [
+
+	^ 0.5
+]
+
 { #category : 'instance creation' }
 PmoSquare class >> newWithA: aSide [
 
@@ -16,9 +22,12 @@ PmoSquare class >> newWithA: aSide [
 
 { #category : 'accessing' }
 PmoSquare >> a: aNumber [
+	"a := aNumber.
+	b := aNumber"
 
-	a := aNumber.
-	b := aNumber
+	super
+		a: aNumber;
+		b: aNumber
 ]
 
 { #category : 'accessing' }

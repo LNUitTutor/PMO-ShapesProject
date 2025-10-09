@@ -49,5 +49,5 @@ PmoCircle >> r [
 { #category : 'accessing' }
 PmoCircle >> r: aNumber [
 
-	r := aNumber max: 0.1
+	r := aNumber max: self class minimalSize
 ]

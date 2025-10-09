@@ -32,8 +32,10 @@ PmoRectangle >> a [
 ]
 
 { #category : 'accessing' }
-PmoRectangle >> a: aNumber [ 
-	a := aNumber  max: 0.1
+PmoRectangle >> a: aNumber [
+
+	"a := aNumber max: 0.1"
+	a := aNumber max: self class minimalSize
 ]
 
 { #category : 'calculating' }
@@ -52,7 +54,7 @@ PmoRectangle >> b [
 { #category : 'accessing' }
 PmoRectangle >> b: aNumber [
 
-	b := aNumber max: 0.1
+	b := aNumber max: self class minimalSize
 ]
 
 { #category : 'initialization' }
